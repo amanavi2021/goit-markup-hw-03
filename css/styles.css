@@ -87,9 +87,6 @@ img {
 
 .header {
     border-bottom: 1px solid #ECECEC;
-    background-color: var(--main-title-color);
-
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 }
 
@@ -103,6 +100,8 @@ img {
 
 .header-logo {
     margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .header-logo-second {
@@ -154,8 +153,15 @@ img {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    text-align: center;
     background-color: var(--bg-color);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .hero-title {
@@ -171,9 +177,15 @@ img {
 }
 
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
     border: 0;
     border-radius: 4px;
-    padding: 10px 32px;
+
+    width: 216px;
+    height: 50px;
 
     font-family: inherit;
     font-weight: 700;
@@ -183,21 +195,28 @@ img {
     cursor: pointer;
     color: var(--main-title-color);
     background-color: var(--accent-color);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button:hover,
 .button:focus {
-    color: var(--accent-color);
-    background-color: var(--main-title-color);
+    color: var(--main-title-color);
+    background-color: #188CE8;
 }
 
 /* Особливості */
-.qualities-list {
-    display: flex;
+.qualities {
+    padding-bottom: 0;
 }
 
-.qualities-item:not(:last-child) {
-    margin-right: 30px;
+.qualities-list {
+    display: flex;
+    gap: 30px;
+}
+
+.qualities-item {
+    flex-basis: calc((100% - 30px * 3)/4);
 }
 
 .qualities-title {
@@ -234,9 +253,15 @@ img {
     background-color: var(--main-title-color);
 }
 
-.team-img {
-    margin-bottom: 30px;
+.team-desc {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 4px 4px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
+
 
 .team-title {
     margin-bottom: 10px;
@@ -249,8 +274,6 @@ img {
 }
 
 .team-text {
-    margin-bottom: 30px;
-
     font-size: 16px;
     text-align: center;
     line-height: calc(19/16);
@@ -288,6 +311,10 @@ img {
     color: var(--accent-color);
 }
 
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
 /* Стилі portfolio.html */
 .filters-list {
     display: flex;
@@ -308,8 +335,6 @@ img {
     background-color: var(--team-bg-color);
     color: var(--title-color);
 
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
 }
 
 .filter-item:not(:last-child) {
@@ -320,6 +345,9 @@ img {
 .filter:focus {
     background-color: var(--accent-color);
     color: var(--main-title-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 
 .portfolio-list {
