@@ -14,12 +14,19 @@ body {
     color: var(--main-color);
     background-color: var(--main-title-color);
 }
+
 /* reset styles start */
-h1,h2,h3,h4,h5,h6,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
 
-img{
+img {
     display: block;
 }
 
@@ -32,9 +39,10 @@ img{
 .link {
     text-decoration: none;
 }
+
 /* reset styles end */
 
-.container{
+.container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
@@ -42,7 +50,7 @@ img{
     outline-offset: -2px; */
 }
 
-.section{
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -72,7 +80,7 @@ img{
 }
 
 /* Шапка */
-.header-container{
+.header-container {
     display: flex;
     align-items: center;
 }
@@ -93,28 +101,28 @@ img{
     color: var(--accent-color);
 }
 
-.header-logo{
-margin-right: 93px; 
+.header-logo {
+    margin-right: 93px;
 }
 
 .header-logo-second {
     color: #000000;
 }
 
-.header-nav{
+.header-nav {
     display: flex;
     align-items: center;
     margin-right: auto;
 }
 
 .nav-list,
-.contacts-list{
+.contacts-list {
     display: flex;
     align-items: center;
 }
 
 .nav-item:not(:last-child),
-.contacts-item:not(:last-child){
+.contacts-item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -163,9 +171,9 @@ margin-right: 93px;
 }
 
 .button {
-    border:0;
+    border: 0;
     border-radius: 4px;
-    padding:10px 32px;
+    padding: 10px 32px;
 
     font-family: inherit;
     font-weight: 700;
@@ -184,13 +192,14 @@ margin-right: 93px;
 }
 
 /* Особливості */
-.qualities-list{
+.qualities-list {
     display: flex;
 }
 
-.qualities-item:not(:last-child){
+.qualities-item:not(:last-child) {
     margin-right: 30px;
 }
+
 .qualities-title {
     margin-bottom: 10px;
 
@@ -206,9 +215,9 @@ margin-right: 93px;
 }
 
 /* Чим ми займаємося */
-.about-list{
+.about-list {
     display: flex;
-    gap:30px;
+    gap: 30px;
 }
 
 /* Наша команда */
@@ -216,9 +225,9 @@ margin-right: 93px;
     background-color: var(--team-bg-color);
 }
 
-.team-list{
+.team-list {
     display: flex;
-    gap:30px;
+    gap: 30px;
 }
 
 .team-item {
@@ -228,6 +237,7 @@ margin-right: 93px;
 .team-img {
     margin-bottom: 30px;
 }
+
 .team-title {
     margin-bottom: 10px;
 
@@ -240,7 +250,7 @@ margin-right: 93px;
 
 .team-text {
     margin-bottom: 30px;
-    
+
     font-size: 16px;
     text-align: center;
     line-height: calc(19/16);
@@ -255,6 +265,7 @@ margin-right: 93px;
 }
 
 .footer-logo {
+    display: block;
     margin-bottom: 20px;
 }
 
@@ -278,15 +289,15 @@ margin-right: 93px;
 }
 
 /* Стилі portfolio.html */
-.filters-list{
-display: flex;
-justify-content:center;
-margin-bottom: 50px;
+.filters-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .filter {
     padding: 6px 22px;
-    border:0;
+    border: 0;
     border-radius: 4px;
 
     font-family: inherit;
@@ -296,14 +307,14 @@ margin-bottom: 50px;
     cursor: pointer;
     background-color: var(--team-bg-color);
     color: var(--title-color);
-    
+
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
 
- .filter-item:not(:last-child) {
+.filter-item:not(:last-child) {
     margin-right: 8px;
-} 
+}
 
 .filter:hover,
 .filter:focus {
@@ -311,14 +322,14 @@ margin-bottom: 50px;
     color: var(--main-title-color);
 }
 
-.portfolio-list{
+.portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap:30px;
+    gap: 30px;
 }
 
 .portfolio-item {
-   flex-basis: calc((100% - 30px * 2)/3);
+    flex-basis: calc((100% - 30px * 2)/3);
 
     background-color: var(--main-title-color);
 }
@@ -327,8 +338,11 @@ margin-bottom: 50px;
     color: var(--main-color);
 }
 
-.portfolio-desc{
-padding:20px 24px;
+.portfolio-desc {
+    padding: 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
 
 .portfolio-title {
